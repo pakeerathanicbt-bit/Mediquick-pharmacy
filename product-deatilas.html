@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details - MediQuick Pharmacy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <h1 class="logo">MediQuick Pharmacy</h1>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="products.html">Products</a>
+                <a href="login.html">Login</a>
+                <a href="cart.html">Cart</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="details-container">
+
+        <div class="details-card">
+
+            <div class="details-image">
+                <span>💊</span>
+            </div>
+
+            <div class="details-info">
+                <h2>Panadol</h2>
+                <p class="product-category">Category: Medicine</p>
+
+                <h3>Rs. 150.00</h3>
+
+                <p>
+                    Panadol is a healthcare product used for
+                    pain relief and fever management.
+                </p>
+
+                <label for="productQuantity">Quantity:</label>
+                <input type="number" id="productQuantity"
+                       value="1" min="1" max="10">
+
+                <button onclick="addProductToCart()">
+                    Add to Cart
+                </button>
+
+                <a href="products.html" class="back-link">
+                    Back to Products
+                </a>
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 MediQuick Pharmacy. All Rights Reserved.</p>
+            <p>Your trusted online healthcare partner.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart - MediQuick Pharmacy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <h1 class="logo">MediQuick Pharmacy</h1>
+
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="products.html">Products</a>
+                <a href="login.html">Login</a>
+                <a href="cart.html">Cart</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Shopping Cart -->
+    <main class="cart-container">
+
+        <h2>My Shopping Cart</h2>
+        <p>Review your selected healthcare products.</p>
+
+        <div id="cartItems"></div>
+
+        <div id="emptyCart" style="display:none;">
+            <h3>Your cart is empty!</h3>
+            <p>Start shopping and add products to your cart.</p>
+            <a href="products.html" class="btn">Shop Now</a>
+        </div>
+
+        <div id="cartSummary">
+            <h3>Total: Rs. <span id="cartTotal">0.00</span></h3>
+            <button onclick="checkout()">Proceed to Checkout</button>
+            <a href="products.html" class="continue-shopping">
+                Continue Shopping
+            </a>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 MediQuick Pharmacy. All Rights Reserved.</p>
+            <p>Your trusted online healthcare partner.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

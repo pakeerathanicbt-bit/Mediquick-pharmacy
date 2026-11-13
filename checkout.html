@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - MediQuick Pharmacy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <h1 class="logo">MediQuick Pharmacy</h1>
+
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="products.html">Products</a>
+                <a href="login.html">Login</a>
+                <a href="cart.html">Cart</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="checkout-container">
+
+        <h2>Checkout</h2>
+        <p>Complete your delivery information.</p>
+
+        <div class="checkout-card">
+
+            <h3>Delivery Information</h3>
+
+            <form id="checkoutForm">
+
+                <label for="customerName">Full Name</label>
+                <input type="text" id="customerName"
+                       placeholder="Enter your full name" required>
+
+                <label for="customerEmail">Email Address</label>
+                <input type="email" id="customerEmail"
+                       placeholder="Enter your email" required>
+
+                <label for="customerPhone">Phone Number</label>
+                <input type="tel" id="customerPhone"
+                       placeholder="Enter your phone number"
+                       pattern="[0-9]{10}" required>
+
+                <label for="customerAddress">Delivery Address</label>
+                <textarea id="customerAddress"
+                          placeholder="Enter your delivery address"
+                          required></textarea>
+
+                <h3>Payment Method</h3>
+
+                <label class="payment-option">
+                    <input type="radio" name="payment"
+                           value="Cash on Delivery" required>
+                    Cash on Delivery
+                </label>
+
+                <label class="payment-option">
+                    <input type="radio" name="payment"
+                           value="Bank Transfer">
+                    Bank Transfer
+                </label>
+
+                <div class="checkout-total">
+                    Total: Rs. <span id="checkoutTotal">0.00</span>
+                </div>
+
+                <button type="submit">Place Order</button>
+
+            </form>
+
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 MediQuick Pharmacy. All Rights Reserved.</p>
+            <p>Your trusted online healthcare partner.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

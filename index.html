@@ -1,0 +1,133 @@
+          
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediQuick Pharmacy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <h1 class="logo">MediQuick Pharmacy</h1>
+
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="products.html">Products</a>
+                <a href="login.html">Login</a>
+                <a href="cart.html">Cart</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h2>Your Health, Our Priority</h2>
+            <p>Quality healthcare products delivered to your doorstep.</p>
+            <a href="products.html" class="btn">Shop Now</a>
+        </div>
+    </section>
+
+    <!-- Search Section -->
+    <section class="search-section">
+        <div class="container">
+            <h2>Find Your Products</h2>
+
+            <form action="products.html" method="GET">
+                <input
+                    type="text"
+                    name="search"
+                    placeholder="Search medicines and healthcare products..."
+                >
+                <button type="submit">Search</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Categories -->
+    <section class="categories">
+        <div class="container">
+            <h2>Shop by Category</h2>
+
+            <div class="category-grid">
+
+                <div class="category-card">
+                    <h3>Medicines</h3>
+                    <p>Essential medicines for everyday health.</p>
+                </div>
+
+                <div class="category-card">
+                    <h3>Personal Care</h3>
+                    <p>Products for personal hygiene and care.</p>
+                </div>
+
+                <div class="category-card">
+                    <h3>Wellness</h3>
+                    <p>Products to support a healthy lifestyle.</p>
+                </div>
+
+                <div class="category-card">
+                    <h3>Healthcare</h3>
+                    <p>Healthcare essentials for your home.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="products">
+        <div class="container">
+            <h2>Featured Products</h2>
+
+            <div class="product-grid">
+
+                <div class="product-card">
+                    <div class="product-image">Medicine</div>
+                    <h3>Panadol</h3>
+                    <p>Price: Rs. 150.00</p>
+                    <button onclick="addToCart('Panadol', 150)">
+                        Add to Cart
+                    </button>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">Personal Care</div>
+                    <h3>Hand Sanitizer</h3>
+                    <p>Price: Rs. 450.00</p>
+                    <button onclick="addToCart('Hand Sanitizer', 450)">
+                        Add to Cart
+                    </button>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">Wellness</div>
+                    <h3>Vitamin C</h3>
+                    <p>Price: Rs. 800.00</p>
+                    <button onclick="addToCart('Vitamin C', 800)">
+                        Add to Cart
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 MediQuick Pharmacy. All Rights Reserved.</p>
+            <p>Your trusted online healthcare partner.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

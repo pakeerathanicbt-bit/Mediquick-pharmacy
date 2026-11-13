@@ -1,0 +1,206 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Products | MediQuick Pharmacy</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+
+            <h1 class="logo">MediQuick Pharmacy</h1>
+
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="products.html">Products</a>
+                <a href="login.html">Login</a>
+                <a href="cart.html">Cart</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+
+        </div>
+    </header>
+
+
+    <!-- Products Heading -->
+    <section class="products-page">
+
+        <div class="container">
+
+            <h2>Our Products</h2>
+
+            <p>Find the healthcare products you need.</p>
+
+
+            <!-- Search -->
+            <div class="product-search">
+
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Search products..."
+                >
+
+            </div>
+
+
+            <!-- Category Filter -->
+            <div class="filter-buttons">
+
+                <button onclick="filterProducts('All')">All</button>
+
+                <button onclick="filterProducts('Medicine')">
+                    Medicine
+                </button>
+
+                <button onclick="filterProducts('Personal Care')">
+                    Personal Care
+                </button>
+
+                <button onclick="filterProducts('Wellness')">
+                    Wellness
+                </button>
+
+                <button onclick="filterProducts('Healthcare')">
+                    Healthcare
+                </button>
+
+            </div>
+
+
+            <!-- Product List -->
+            <div class="product-grid" id="productList">
+
+                <!-- Product 1 -->
+                <div class="product-card" data-category="Medicine">
+
+                    <div class="product-image">💊</div>
+
+                    <h3>Panadol</h3>
+
+                    <p>Price: Rs. 150.00</p>
+
+                    <button onclick="addToCart('Panadol', 150)">
+                        Add to Cart
+                    </button>
+
+                </div>
+
+
+                <!-- Product 2 -->
+                <div class="product-card" data-category="Personal Care">
+
+                    <div class="product-image">🧴</div>
+
+                    <h3>Hand Sanitizer</h3>
+
+                    <p>Price: Rs. 450.00</p>
+
+                    <button onclick="addToCart('Hand Sanitizer', 450)">
+                        Add to Cart
+                    </button>
+
+                </div>
+
+
+                <!-- Product 3 -->
+                <div class="product-card" data-category="Wellness">
+
+                    <div class="product-image">🍊</div>
+
+                    <h3>Vitamin C</h3>
+
+                    <p>Price: Rs. 800.00</p>
+
+                    <button onclick="addToCart('Vitamin C', 800)">
+                        Add to Cart
+                    </button>
+
+                </div>
+
+
+                <!-- Product 4 -->
+                <div class="product-card" data-category="Healthcare">
+
+                    <div class="product-image">🩺</div>
+
+                    <h3>Digital Thermometer</h3>
+
+                    <p>Price: Rs. 1200.00</p>
+
+                    <button onclick="addToCart('Digital Thermometer', 1200)">
+                        Add to Cart
+                    </button>
+
+                </div>
+
+
+                <!-- Product 5 -->
+                <div class="product-card" data-category="Personal Care">
+
+                    <div class="product-image">🪥</div>
+
+                    <h3>Toothbrush</h3>
+
+                    <p>Price: Rs. 250.00</p>
+
+                    <button onclick="addToCart('Toothbrush', 250)">
+                        Add to Cart
+                    </button>
+
+                </div>
+
+
+                <!-- Product 6 -->
+                <div class="product-card" data-category="Healthcare">
+
+                    <div class="product-image">🩹</div>
+
+                    <h3>First Aid Kit</h3>
+
+                    <p>Price: Rs. 950.00</p>
+
+                    <button onclick="addToCart('First Aid Kit', 950)">
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+            <p id="noProducts" style="display:none;">
+                No products found.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <div class="container">
+
+            <p>&copy; 2026 MediQuick Pharmacy. All Rights Reserved.</p>
+
+            <p>Your trusted online healthcare partner.</p>
+
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>

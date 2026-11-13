@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prescription Upload - MediQuick Pharmacy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <h1 class="logo">MediQuick Pharmacy</h1>
+
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="products.html">Products</a>
+                <a href="login.html">Login</a>
+                <a href="cart.html">Cart</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Prescription Upload -->
+    <main class="prescription-container">
+
+        <h2>Upload Your Prescription</h2>
+        <p>Upload your prescription for pharmacy review.</p>
+
+        <div class="prescription-card">
+
+            <h3>Prescription Details</h3>
+
+            <form id="prescriptionForm">
+
+                <label for="prescriptionName">Full Name</label>
+                <input type="text" id="prescriptionName"
+                       placeholder="Enter your full name" required>
+
+                <label for="prescriptionEmail">Email Address</label>
+                <input type="email" id="prescriptionEmail"
+                       placeholder="Enter your email" required>
+
+                <label for="prescriptionFile">Select Prescription</label>
+                <input type="file" id="prescriptionFile"
+                       accept=".jpg,.jpeg,.png,.pdf" required>
+
+                <small>Accepted formats: JPG, PNG and PDF.</small>
+
+                <label for="prescriptionNotes">
+                    Additional Instructions
+                </label>
+
+                <textarea id="prescriptionNotes"
+                          placeholder="Enter any additional information..."
+                          rows="4"></textarea>
+
+                <button type="submit">Submit Prescription</button>
+
+            </form>
+
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 MediQuick Pharmacy. All Rights Reserved.</p>
+            <p>Your trusted online healthcare partner.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
